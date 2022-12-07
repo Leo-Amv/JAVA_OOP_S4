@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfded37c-8792-43ab-a6b4-bc23fc6c154c" name="Changes" comment="DateFormat added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Priority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Sheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Task.java" afterDir="false" />
+    <list default="true" id="bfded37c-8792-43ab-a6b4-bc23fc6c154c" name="Changes" comment="new classes added,sheduler updated">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Commands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/TaskFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/service/ShedulerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/service/TaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/view/Viewer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Sheduler.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +45,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,7 +57,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670340555526</updated>
-      <workItem from="1670340557213" duration="4043000" />
+      <workItem from="1670340557213" duration="5953000" />
+      <workItem from="1670411431429" duration="14572000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1670341761196</created>
@@ -68,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670342035934</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="package data updated">
+      <created>1670345043792</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670345043792</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +101,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="DateFormat added" />
-    <option name="LAST_COMMIT_MESSAGE" value="DateFormat added" />
+    <MESSAGE value="package data updated" />
+    <MESSAGE value="new classes added,sheduler updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="new classes added,sheduler updated" />
   </component>
 </project>
