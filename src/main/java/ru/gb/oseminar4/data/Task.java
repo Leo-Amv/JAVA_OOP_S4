@@ -62,4 +62,16 @@ public class Task {
     public Long getTaskId() {
         return taskId;
     }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "author=" + author +
+                ", task='" + task + '\'' +
+                ", priority=" + priority +
+                ", status=" + status +
+                ", dateCreate=" + dateCreate +
+                ", taskId=" + taskId +
+                '}';
+    }
 }

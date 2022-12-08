@@ -14,8 +14,12 @@ public class Controller {
         shedulerService.addTask(taskService.createTask(author, task, priority));
     }
 
-    public void deleteTask(Task task) {
-        shedulerService.removeTask(task);
+    public void deleteTask(Long taskId) {
+        for (Task task:shedulerService.getTaskList()) {
+            if (task.getTaskId().equals(taskId)) {
+                shedulerService.removeTask(task);
+            }
+        }
     }
 
     public<T> void editTask(Long taskId,T field) {
@@ -23,6 +27,18 @@ public class Controller {
             if (task.getTaskId().equals(taskId)){
                 taskService.editTask(task,field);
             }
+        }
+    }
+    public void showTaskById(Long taskId){
+        for (Task task:shedulerService.getTaskList()) {
+            if (task.getTaskId().equals(taskId)) {
+                System.out.println(task);
+            }
+        }
+    }
+    public void showAllTasks(){
+        for (Task task: shedulerService.getTaskList()) {
+            System.out.println(task.toString());
         }
     }
 

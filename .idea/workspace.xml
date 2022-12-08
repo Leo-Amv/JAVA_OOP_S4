@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfded37c-8792-43ab-a6b4-bc23fc6c154c" name="Changes" comment="new classes added,sheduler updated">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Commands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/TaskFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/service/ShedulerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/service/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/view/Viewer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Sheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/view/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/view/Viewer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,16 +35,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,6 +55,7 @@
       <updated>1670340555526</updated>
       <workItem from="1670340557213" duration="5953000" />
       <workItem from="1670411431429" duration="14572000" />
+      <workItem from="1670509118296" duration="2552000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1670341761196</created>
