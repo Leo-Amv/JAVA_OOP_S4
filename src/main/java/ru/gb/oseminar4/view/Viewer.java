@@ -1,9 +1,7 @@
 package ru.gb.oseminar4.view;
 
 import ru.gb.oseminar4.controller.Controller;
-import ru.gb.oseminar4.data.Commands;
-import ru.gb.oseminar4.data.Priority;
-import ru.gb.oseminar4.data.User;
+import ru.gb.oseminar4.data.*;
 
 import java.util.Scanner;
 
@@ -13,7 +11,7 @@ public class Viewer {
         while (true){
             menu();
             String command = input("Enter command:\t").toUpperCase();
-            Commands cmd = Commands.valueOf(command);
+            Commands cmd = Commands.valueOf(command.toUpperCase());
             switch (cmd){
                 case CREATE:
                     String firstName = input("Enter firstName:\t");
@@ -31,6 +29,30 @@ public class Viewer {
                     controller.deleteTask(taskId);
                     break;
                 case EDIT:
+                    Long taskID = Long.valueOf(input("Enter task id:\t"));
+                    TaskFields field = TaskFields.valueOf(input("Enter field:\n" +
+                            "TASK\n" +
+                            "AUTHOR\n" +
+                            "STATUS\n" +
+                            "PRIORITY\n").toUpperCase());
+                    switch (field){
+                        case TASK:
+                            controller.editTask(taskID ,input("Enter task:\t"));
+                            break;
+                        case AUTHOR:
+                            String fName = input("Enter firstName:\t");
+                            String lName = input("Enter lastName:\t");
+                            controller.editTask(taskID ,new User(fName,lName));
+                            break;
+                        case STATUS:
+                            Boolean status = Boolean.valueOf(input("Enter status 'true' or 'false':\t"));
+                            controller.editTask(taskID ,status);
+                            break;
+                        case PRIORITY:
+                            Priority prior = Priority.valueOf(input("Enter priority 'HIGH' 'MEDIUM' 'LOW' :\t").toUpperCase());
+                            controller.editTask(taskID ,prior);
+                            break;
+                    }
                     break;
                 case SHOW:
                     Long Id = Long.valueOf(input("Enter taskId:\t"));
