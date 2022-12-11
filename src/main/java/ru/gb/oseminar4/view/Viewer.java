@@ -42,7 +42,10 @@ public class Viewer {
                         case AUTHOR:
                             String fName = input("Enter firstName:\t");
                             String lName = input("Enter lastName:\t");
-                            controller.editTask(taskID ,new User(fName,lName));
+                            User author = controller.getTaskById(taskID).getAuthor();
+                            author.setFirstName(fName);
+                            author.setLastName(lName);
+                            controller.editTask(taskID ,author);
                             break;
                         case STATUS:
                             Boolean status = Boolean.valueOf(input("Enter status 'true' or 'false':\t"));
@@ -56,10 +59,12 @@ public class Viewer {
                     break;
                 case SHOW:
                     Long Id = Long.valueOf(input("Enter taskId:\t"));
-                    controller.showTaskById(Id);
+                    System.out.println(controller.getTaskById(Id));
                     break;
                 case ALL:
-                    controller.showAllTasks();
+                    for (Task t: controller.getAllTasks()) {
+                        System.out.println(t);
+                    }
                     break;
                 case EXIT:
                     return;
@@ -67,7 +72,7 @@ public class Viewer {
         }
     }
     private void menu(){
-        System.out.println("Choose command:\n" +
+        System.out.println("\nChoose command:\n" +
                 "Create task:\tCREATE\n" +
                 "Delete task:\tDELETE\n" +
                 "Edit task:\tEDIT\n" +

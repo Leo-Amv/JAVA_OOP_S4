@@ -76,7 +76,7 @@ public class Task {
     public String toString() {
         return "Task:\t" + taskId+
                 "\nAuthor:\t" + author +
-                "\nTask:\t" + task + '\'' +
+                "\nTask:\t" + task +
                 "\nPriority:\t" + priority +
                 "\nStatus:\t" + status +
                 "\nDateCreate:\t" + dateCreate;
