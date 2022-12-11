@@ -1,8 +1,8 @@
 package ru.gb.oseminar4.data;
 
 public class User {
-    public String firstName;
-    public String lastName;
+    private String firstName;
+    private String lastName;
     private final Long userId;
     private static Long id =0L;
 
@@ -10,6 +10,12 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userId = ++id;
+    }
+
+    public User(String firstName, String lastName, Long userId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userId = userId;
     }
 
     public String getFirstName() {
@@ -34,10 +40,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", userId=" + userId +
-                '}';
+        return firstName + " " + lastName + "userId:\t"+userId;
     }
 }

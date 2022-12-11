@@ -22,6 +22,15 @@ public class Task {
         this.taskId = ++id;
     }
 
+    public Task(User author, String task, Priority priority, Boolean status, Date dateCreate, Long taskId) {
+        this.author = author;
+        this.task = task;
+        this.priority = priority;
+        this.status = status;
+        this.dateCreate = dateCreate;
+        this.taskId = taskId;
+    }
+
     public User getAuthor() {
         return author;
     }
@@ -65,13 +74,11 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{" +
-                "author=" + author +
-                ", task='" + task + '\'' +
-                ", priority=" + priority +
-                ", status=" + status +
-                ", dateCreate=" + dateCreate +
-                ", taskId=" + taskId +
-                '}';
+        return "Task:\t" + taskId+
+                "\nAuthor:\t" + author +
+                "\nTask:\t" + task + '\'' +
+                "\nPriority:\t" + priority +
+                "\nStatus:\t" + status +
+                "\nDateCreate:\t" + dateCreate;
     }
 }

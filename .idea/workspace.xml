@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfded37c-8792-43ab-a6b4-bc23fc6c154c" name="Changes" comment="Viewer added,Controller updated">
+    <list default="true" id="bfded37c-8792-43ab-a6b4-bc23fc6c154c" name="Changes" comment="TaskService fix edit method, EDIT case updated.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/FileOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/TaskMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/view/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/view/Viewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/data/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/service/ShedulerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/oseminar4/service/ShedulerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,17 +37,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/XaKeR/Desktop/IntelliJIDEA/Sheduler",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/XaKeR/Desktop/IntelliJIDEA/Sheduler&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,7 +60,8 @@
       <workItem from="1670411431429" duration="14572000" />
       <workItem from="1670509118296" duration="3513000" />
       <workItem from="1670581968325" duration="707000" />
-      <workItem from="1670676821977" duration="2449000" />
+      <workItem from="1670676821977" duration="2920000" />
+      <workItem from="1670751864195" duration="7251000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1670341761196</created>
@@ -86,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670512048433</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="TaskService fix edit method, EDIT case updated.">
+      <created>1670679621409</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670679621409</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +121,7 @@
     <MESSAGE value="package data updated" />
     <MESSAGE value="new classes added,sheduler updated" />
     <MESSAGE value="Viewer added,Controller updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Viewer added,Controller updated" />
+    <MESSAGE value="TaskService fix edit method, EDIT case updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="TaskService fix edit method, EDIT case updated." />
   </component>
 </project>
