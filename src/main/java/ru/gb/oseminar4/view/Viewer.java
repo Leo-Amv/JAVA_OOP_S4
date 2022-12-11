@@ -68,6 +68,7 @@ public class Viewer {
                     break;
                 case EXIT:
                     return;
+
             }
         }
     }

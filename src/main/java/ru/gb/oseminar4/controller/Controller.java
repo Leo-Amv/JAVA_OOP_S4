@@ -29,7 +29,6 @@ public class Controller {
     }
     public Task getTaskById(Long taskId){
         return shedulerService.getTaskByID(taskId);
-
     }
     public List<Task> getAllTasks(){
        return shedulerService.getTaskList();

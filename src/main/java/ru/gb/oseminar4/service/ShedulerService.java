@@ -46,9 +46,10 @@ public class ShedulerService {
         for (Task task : getTaskList()) {
             if (task.getTaskId().equals(taskId)) {
                 result = task;
-            } else {
-                throw new IllegalStateException("Task is not found!");
             }
+        }
+        if (result == null){
+            throw new IllegalStateException("Task is not found!");
         }
         return result;
     }
