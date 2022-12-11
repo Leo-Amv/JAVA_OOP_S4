@@ -10,8 +10,7 @@ public class Task {
     private Priority priority;
     private Boolean status;
     private final Date dateCreate;
-    private final Long taskId;
-    private static Long id = 0L;
+    private Long taskId;
 
     public Task(User author, String task, Priority priority) {
         this.author = author;
@@ -19,7 +18,7 @@ public class Task {
         this.priority = priority;
         this.status = false;
         this.dateCreate = Calendar.getInstance().getTime();
-        this.taskId = ++id;
+        this.taskId = 0L;
     }
 
     public Task(User author, String task, Priority priority, Boolean status, Date dateCreate, Long taskId) {
@@ -70,6 +69,10 @@ public class Task {
 
     public Long getTaskId() {
         return taskId;
+    }
+
+    public void setTaskId(Long taskId) {
+        this.taskId = taskId;
     }
 
     @Override

@@ -63,7 +63,7 @@ public class Viewer {
                     break;
                 case ALL:
                     for (Task t: controller.getAllTasks()) {
-                        System.out.println(t);
+                        System.out.println("\n"+t);
                     }
                     break;
                 case EXIT:
@@ -75,8 +75,8 @@ public class Viewer {
         System.out.println("\nChoose command:\n" +
                 "Create task:\tCREATE\n" +
                 "Delete task:\tDELETE\n" +
-                "Edit task:\tEDIT\n" +
-                "Show task by ID:\tSHOW\n" +
+                "Edit task:\t\tEDIT\n" +
+                "Show task:\t\tSHOW\n" +
                 "Show all tasks:\tALL\n" +
                 "Exit program:\tEXIT\n");
     }

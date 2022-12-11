@@ -23,6 +23,14 @@ public class ShedulerService {
 
     public void addTask(Task task) {
         List<String> lines = fileOperation.readAllLines();
+        long taskId = 0L;
+        for (Task t: getTaskList()) {
+            Long id = t.getTaskId();
+            if (taskId<id){
+                taskId = id;
+            }
+        }
+        task.setTaskId(++taskId);
         lines.add(taskMapper.map(task));
         fileOperation.saveAllLines(lines);
     }
